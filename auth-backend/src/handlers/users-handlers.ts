@@ -127,7 +127,7 @@ const registerUser = async (req: Request, res: Response) => {
         // set Token
         // @ts-ignore
         const insertID = result[0].insertId as number;
-        await setAuthTokens(String(insertID), user.email, res);
+        await setAuthTokens(String(insertID), email, res);
 
         return res.status(200).json({ message: `User retrived`, user: result[0] });
 
