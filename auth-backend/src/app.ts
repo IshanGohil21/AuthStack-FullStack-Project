@@ -2,7 +2,6 @@ import express from 'express';
 import helmet from 'helmet';
 import morgan from 'morgan';
 import appRouter from './routers';
-import cookie from 'cookie-parser';
 import cookieParser from 'cookie-parser';
 
 const app = express();
